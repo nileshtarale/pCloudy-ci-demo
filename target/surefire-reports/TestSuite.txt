@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 63.085 s <<< FAILURE! - in TestSuite
+Test(com.pCloudy.testNG.Runner)  Time elapsed: 2.492 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Nileshs-MacBook-Pro.local', ip: 'fe80:0:0:0:1083:2cce:6530:8466%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.2.1', java.version: '18.0.1.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /opt/build/raid-data/data/u..., appActivity: com.ba.mobile.LaunchActivity, appPackage: com.pcloudy.appiumdemo, automationName: uiautomator2, databaseEnabled: false, desired: {app: /opt/build/raid-data/data/u..., appActivity: com.ba.mobile.LaunchActivity, appPackage: com.pcloudy.appiumdemo, automationName: uiautomator2, deviceName: 614, launchTimeout: 90000, newCommandTimeout: 600, pCloudy_ApiKey: js45jq5c4wf22jmb9628wsm8, pCloudy_ApplicationName: pCloudyAppiumDemo.apk, pCloudy_DeviceManafacturer: Oneplus, pCloudy_DurationInMinutes: 10, pCloudy_Username: nilesh.tarale@sstsinc.com, platformName: android, platformVersion: 10, systemPort: 30274}, deviceApiLevel: 29, deviceManufacturer: OnePlus, deviceModel: ONEPLUS A6000, deviceName: e3ac821, deviceScreenDensity: 420, deviceScreenSize: 1080x2280, deviceUDID: e3ac821, javascriptEnabled: true, launchTimeout: 90000, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 600, pCloudy_ApiKey: js45jq5c4wf22jmb9628wsm8, pCloudy_ApplicationName: pCloudyAppiumDemo.apk, pCloudy_DeviceManafacturer: Oneplus, pCloudy_DurationInMinutes: 10, pCloudy_Username: nilesh.tarale@sstsinc.com, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 80, systemPort: 30274, takesScreenshot: true, viewportRect: {height: 1995, left: 0, top: 80, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 729406f2-2e91-4c58-9d5f-a43a3bf0219a
+*** Element info: {Using=xpath, value=//android.widget.Button[@resource-id='com.pcloudy.appiumdemo:id/flightButton']}
+	at com.pCloudy.testNG.Runner.Test(Runner.java:66)
+

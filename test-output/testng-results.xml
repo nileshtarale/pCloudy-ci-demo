@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-08T08:26:28Z" name="pCloudy Suite" finished-at="2023-08-08T08:28:18Z" duration-ms="110352">
+    <groups>
+    </groups>
+    <test started-at="2023-08-08T08:26:28Z" name="Test" finished-at="2023-08-08T08:28:08Z" duration-ms="100615">
+      <class name="com.pCloudy.testNG.Runner">
+        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:com.pCloudy.testNG.Runner@1018bde2]" started-at="2023-08-08T18:26:28Z" name="setUpSuite" finished-at="2023-08-08T18:26:28Z" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpSuite -->
+        <test-method is-config="true" signature="prepareTest(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.pCloudy.testNG.Runner@1018bde2]" started-at="2023-08-08T18:26:28Z" name="prepareTest" finished-at="2023-08-08T18:27:24Z" duration-ms="55808" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Motorola]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.pCloudy.testNG.Runner.FailTheTest() throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareTest -->
+        <test-method signature="FailTheTest()[pri:0, instance:com.pCloudy.testNG.Runner@1018bde2]" started-at="2023-08-08T18:27:24Z" name="FailTheTest" finished-at="2023-08-08T18:27:27Z" duration-ms="3525" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Nileshs-MacBook-Pro.local', ip: 'fe80:0:0:0:14c7:3e94:ebe4:ab8e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.2.1', java.version: '17.0.3'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /opt/raid-data/data/user/12..., appActivity: com.ba.mobile.LaunchActivity, appPackage: com.pcloudy.appiumdemo, automationName: uiautomator2, build: Build_600, databaseEnabled: false, desired: {app: /opt/raid-data/data/user/12..., appActivity: com.ba.mobile.LaunchActivity, appPackage: com.pcloudy.appiumdemo, automationName: uiautomator2, build: Build_600, deviceName: 566, launchTimeout: 90000, name: FailTheTest, newCommandTimeout: 600, pCloudy_ApiKey: js45jq5c4wf22jmb9628wsm8, pCloudy_ApplicationName: pCloudy_Appium_Demo-1666933..., pCloudy_DeviceManafacturer: Motorola, pCloudy_DurationInMinutes: 10, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: true, pCloudy_EnableVideo: true, pCloudy_Username: nilesh.tarale@sstsinc.com, platformName: android, platformVersion: 12, project: Prtesting_webapp, systemPort: 30184, tag: Android}, deviceApiLevel: 31, deviceManufacturer: motorola, deviceModel: moto g51 5G, deviceName: ZD2223LQDC, deviceScreenDensity: 400, deviceScreenSize: 1080x2460, deviceUDID: ZD2223LQDC, javascriptEnabled: true, launchTimeout: 90000, locationContextEnabled: false, name: FailTheTest, networkConnectionEnabled: true, newCommandTimeout: 600, pCloudy_ApiKey: js45jq5c4wf22jmb9628wsm8, pCloudy_ApplicationName: pCloudy_Appium_Demo-1666933..., pCloudy_DeviceManafacturer: Motorola, pCloudy_DurationInMinutes: 10, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: true, pCloudy_EnableVideo: true, pCloudy_Username: nilesh.tarale@sstsinc.com, pixelRatio: 2.5, platform: LINUX, platformName: Android, platformVersion: 12, project: Prtesting_webapp, statBarHeight: 115, systemPort: 30184, tag: Android, takesScreenshot: true, viewportRect: {height: 2110, left: 0, top: 115, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 7f5bd771-f042-4eea-81c7-da830abcd4de
+*** Element info: {Using=xpath, value=//android.widget.Button[@resource-id='com.pcloudy.appiumdemo:id/flightButton1']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Nileshs-MacBook-Pro.local', ip: 'fe80:0:0:0:14c7:3e94:ebe4:ab8e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.2.1', java.version: '17.0.3'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /opt/raid-data/data/user/12..., appActivity: com.ba.mobile.LaunchActivity, appPackage: com.pcloudy.appiumdemo, automationName: uiautomator2, build: Build_600, databaseEnabled: false, desired: {app: /opt/raid-data/data/user/12..., appActivity: com.ba.mobile.LaunchActivity, appPackage: com.pcloudy.appiumdemo, automationName: uiautomator2, build: Build_600, deviceName: 566, launchTimeout: 90000, name: FailTheTest, newCommandTimeout: 600, pCloudy_ApiKey: js45jq5c4wf22jmb9628wsm8, pCloudy_ApplicationName: pCloudy_Appium_Demo-1666933..., pCloudy_DeviceManafacturer: Motorola, pCloudy_DurationInMinutes: 10, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: true, pCloudy_EnableVideo: true, pCloudy_Username: nilesh.tarale@sstsinc.com, platformName: android, platformVersion: 12, project: Prtesting_webapp, systemPort: 30184, tag: Android}, deviceApiLevel: 31, deviceManufacturer: motorola, deviceModel: moto g51 5G, deviceName: ZD2223LQDC, deviceScreenDensity: 400, deviceScreenSize: 1080x2460, deviceUDID: ZD2223LQDC, javascriptEnabled: true, launchTimeout: 90000, locationContextEnabled: false, name: FailTheTest, networkConnectionEnabled: true, newCommandTimeout: 600, pCloudy_ApiKey: js45jq5c4wf22jmb9628wsm8, pCloudy_ApplicationName: pCloudy_Appium_Demo-1666933..., pCloudy_DeviceManafacturer: Motorola, pCloudy_DurationInMinutes: 10, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: true, pCloudy_EnableVideo: true, pCloudy_Username: nilesh.tarale@sstsinc.com, pixelRatio: 2.5, platform: LINUX, platformName: Android, platformVersion: 12, project: Prtesting_webapp, statBarHeight: 115, systemPort: 30184, tag: Android, takesScreenshot: true, viewportRect: {height: 2110, left: 0, top: 115, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 7f5bd771-f042-4eea-81c7-da830abcd4de
+*** Element info: {Using=xpath, value=//android.widget.Button[@resource-id='com.pcloudy.appiumdemo:id/flightButton1']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at com.pCloudy.testNG.Runner.FailTheTest(Runner.java:118)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FailTheTest -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:com.pCloudy.testNG.Runner@1018bde2]" started-at="2023-08-08T18:27:27Z" name="endTest" finished-at="2023-08-08T18:27:28Z" duration-ms="857" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=FailTheTest status=FAILURE method=Runner.FailTheTest()[pri:0, instance:com.pCloudy.testNG.Runner@1018bde2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="prepareTest(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.pCloudy.testNG.Runner@1018bde2]" started-at="2023-08-08T18:27:28Z" name="prepareTest" finished-at="2023-08-08T18:27:43Z" duration-ms="14694" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Motorola]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.pCloudy.testNG.Runner.SearchFlight() throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareTest -->
+        <test-method signature="SearchFlight()[pri:0, instance:com.pCloudy.testNG.Runner@1018bde2]" started-at="2023-08-08T18:27:43Z" name="SearchFlight" finished-at="2023-08-08T18:28:08Z" duration-ms="24933" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchFlight -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:com.pCloudy.testNG.Runner@1018bde2]" started-at="2023-08-08T18:28:08Z" name="endTest" finished-at="2023-08-08T18:28:08Z" duration-ms="744" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SearchFlight status=SUCCESS method=Runner.SearchFlight()[pri:0, instance:com.pCloudy.testNG.Runner@1018bde2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- com.pCloudy.testNG.Runner -->
+    </test> <!-- Test -->
+    <test started-at="2023-08-08T08:26:28Z" name="Test1" finished-at="2023-08-08T08:28:18Z" duration-ms="110352">
+      <class name="com.pCloudy.testNG.Runner">
+        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:com.pCloudy.testNG.Runner@1fb700ee]" started-at="2023-08-08T18:26:28Z" name="setUpSuite" finished-at="2023-08-08T18:26:28Z" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpSuite -->
+        <test-method is-config="true" signature="prepareTest(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.pCloudy.testNG.Runner@1fb700ee]" started-at="2023-08-08T18:26:28Z" name="prepareTest" finished-at="2023-08-08T18:27:32Z" duration-ms="64037" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Samsung]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.pCloudy.testNG.Runner.FailTheTest() throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareTest -->
+        <test-method signature="FailTheTest()[pri:0, instance:com.pCloudy.testNG.Runner@1fb700ee]" started-at="2023-08-08T18:27:32Z" name="FailTheTest" finished-at="2023-08-08T18:27:36Z" duration-ms="3794" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Nileshs-MacBook-Pro.local', ip: 'fe80:0:0:0:14c7:3e94:ebe4:ab8e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.2.1', java.version: '17.0.3'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /opt/raid-data/data/user/12..., appActivity: com.ba.mobile.LaunchActivity, appPackage: com.pcloudy.appiumdemo, automationName: uiautomator2, build: Build_600, databaseEnabled: false, desired: {app: /opt/raid-data/data/user/12..., appActivity: com.ba.mobile.LaunchActivity, appPackage: com.pcloudy.appiumdemo, automationName: uiautomator2, build: Build_600, deviceName: 496, launchTimeout: 90000, name: FailTheTest, newCommandTimeout: 600, pCloudy_ApiKey: js45jq5c4wf22jmb9628wsm8, pCloudy_ApplicationName: pCloudy_Appium_Demo-1666933..., pCloudy_DeviceManafacturer: Samsung, pCloudy_DurationInMinutes: 10, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: true, pCloudy_EnableVideo: true, pCloudy_Username: nilesh.tarale@sstsinc.com, platformName: android, platformVersion: 13, project: Prtesting_webapp, systemPort: 30154, tag: Android}, deviceApiLevel: 33, deviceManufacturer: samsung, deviceModel: SM-A725F, deviceName: RZ8R70FVAWA, deviceScreenDensity: 450, deviceScreenSize: 1080x2400, deviceUDID: RZ8R70FVAWA, javascriptEnabled: true, launchTimeout: 90000, locationContextEnabled: false, name: FailTheTest, networkConnectionEnabled: true, newCommandTimeout: 600, pCloudy_ApiKey: js45jq5c4wf22jmb9628wsm8, pCloudy_ApplicationName: pCloudy_Appium_Demo-1666933..., pCloudy_DeviceManafacturer: Samsung, pCloudy_DurationInMinutes: 10, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: true, pCloudy_EnableVideo: true, pCloudy_Username: nilesh.tarale@sstsinc.com, pixelRatio: 2.8125, platform: LINUX, platformName: Android, platformVersion: 13, project: Prtesting_webapp, statBarHeight: 86, systemPort: 30154, tag: Android, takesScreenshot: true, viewportRect: {height: 2093, left: 0, top: 86, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 7ccd5741-8d75-4e5f-ac57-ec5d050accb7
+*** Element info: {Using=xpath, value=//android.widget.Button[@resource-id='com.pcloudy.appiumdemo:id/flightButton1']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Nileshs-MacBook-Pro.local', ip: 'fe80:0:0:0:14c7:3e94:ebe4:ab8e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.2.1', java.version: '17.0.3'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: /opt/raid-data/data/user/12..., appActivity: com.ba.mobile.LaunchActivity, appPackage: com.pcloudy.appiumdemo, automationName: uiautomator2, build: Build_600, databaseEnabled: false, desired: {app: /opt/raid-data/data/user/12..., appActivity: com.ba.mobile.LaunchActivity, appPackage: com.pcloudy.appiumdemo, automationName: uiautomator2, build: Build_600, deviceName: 496, launchTimeout: 90000, name: FailTheTest, newCommandTimeout: 600, pCloudy_ApiKey: js45jq5c4wf22jmb9628wsm8, pCloudy_ApplicationName: pCloudy_Appium_Demo-1666933..., pCloudy_DeviceManafacturer: Samsung, pCloudy_DurationInMinutes: 10, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: true, pCloudy_EnableVideo: true, pCloudy_Username: nilesh.tarale@sstsinc.com, platformName: android, platformVersion: 13, project: Prtesting_webapp, systemPort: 30154, tag: Android}, deviceApiLevel: 33, deviceManufacturer: samsung, deviceModel: SM-A725F, deviceName: RZ8R70FVAWA, deviceScreenDensity: 450, deviceScreenSize: 1080x2400, deviceUDID: RZ8R70FVAWA, javascriptEnabled: true, launchTimeout: 90000, locationContextEnabled: false, name: FailTheTest, networkConnectionEnabled: true, newCommandTimeout: 600, pCloudy_ApiKey: js45jq5c4wf22jmb9628wsm8, pCloudy_ApplicationName: pCloudy_Appium_Demo-1666933..., pCloudy_DeviceManafacturer: Samsung, pCloudy_DurationInMinutes: 10, pCloudy_EnableDeviceLogs: true, pCloudy_EnablePerformanceData: true, pCloudy_EnableVideo: true, pCloudy_Username: nilesh.tarale@sstsinc.com, pixelRatio: 2.8125, platform: LINUX, platformName: Android, platformVersion: 13, project: Prtesting_webapp, statBarHeight: 86, systemPort: 30154, tag: Android, takesScreenshot: true, viewportRect: {height: 2093, left: 0, top: 86, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 7ccd5741-8d75-4e5f-ac57-ec5d050accb7
+*** Element info: {Using=xpath, value=//android.widget.Button[@resource-id='com.pcloudy.appiumdemo:id/flightButton1']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at com.pCloudy.testNG.Runner.FailTheTest(Runner.java:118)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FailTheTest -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:com.pCloudy.testNG.Runner@1fb700ee]" started-at="2023-08-08T18:27:36Z" name="endTest" finished-at="2023-08-08T18:27:37Z" duration-ms="1105" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=FailTheTest status=FAILURE method=Runner.FailTheTest()[pri:0, instance:com.pCloudy.testNG.Runner@1fb700ee] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method is-config="true" signature="prepareTest(java.lang.String, java.lang.reflect.Method)[pri:0, instance:com.pCloudy.testNG.Runner@1fb700ee]" started-at="2023-08-08T18:27:37Z" name="prepareTest" finished-at="2023-08-08T18:27:48Z" duration-ms="10794" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Samsung]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.pCloudy.testNG.Runner.SearchFlight() throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prepareTest -->
+        <test-method signature="SearchFlight()[pri:0, instance:com.pCloudy.testNG.Runner@1fb700ee]" started-at="2023-08-08T18:27:48Z" name="SearchFlight" finished-at="2023-08-08T18:28:17Z" duration-ms="29558" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchFlight -->
+        <test-method is-config="true" signature="endTest(org.testng.ITestResult)[pri:0, instance:com.pCloudy.testNG.Runner@1fb700ee]" started-at="2023-08-08T18:28:17Z" name="endTest" finished-at="2023-08-08T18:28:18Z" duration-ms="1031" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SearchFlight status=SUCCESS method=Runner.SearchFlight()[pri:0, instance:com.pCloudy.testNG.Runner@1fb700ee] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- com.pCloudy.testNG.Runner -->
+    </test> <!-- Test1 -->
+  </suite> <!-- pCloudy Suite -->
+</testng-results>
