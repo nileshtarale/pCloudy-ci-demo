@@ -1,0 +1,20 @@
+trigger:
+  - main
+
+pool:
+   vmImage: 'ubuntu-latest'
+
+steps:
+  - script: |
+      mvn test
+    displayName: 'Run Tests'
+- task: Maven@4
+  inputs:
+    mavenPomFile: 'pom.xml'
+    publishJUnitResults: true
+    testResultsFiles: '**/surefire-reports/TEST-*.xml'
+    javaHomeOption: 'JDKVersion'
+    mavenVersionOption: 'Default'
+    mavenAuthenticateFeed: false
+    effectivePomSkip: false
+    sonarQubeRunAnalysis: false
