@@ -7,6 +7,8 @@ import java.net.URL;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Properties;
+
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
@@ -29,20 +31,21 @@ public class Runner {
 	AppiumDriver<WebElement> driver;
 	String folder_name;
 	DateFormat df;
+	String USERNAME = AppConfig.userName;
+	String APIKEY = AppConfig.password;
 	
-	@BeforeTest
-	public void setUpSuite() throws Exception {
-		
-	}
+//	System.out.println("UserName from paramter - "+ USERNAME);
+//	System.out.println("API key from paramter - "+ APIKEY);
 	
 	@Parameters({"deviceName"})
 	@BeforeMethod
 	public void prepareTest(String deviceName, Method m) throws IOException, InterruptedException {
 		
 		DesiredCapabilities capabilities = new DesiredCapabilities();
-		
-		capabilities.setCapability("pCloudy_Username", "nilesh.tarale@sstsinc.com");
-		capabilities.setCapability("pCloudy_ApiKey", "js45jq5c4wf22jmb9628wsm8");
+
+		////////////////// original code //////////////
+		capabilities.setCapability("pCloudy_Username", USERNAME);
+		capabilities.setCapability("pCloudy_ApiKey", APIKEY);
 		capabilities.setCapability("pCloudy_ApplicationName", "pCloudy_Appium_Demo-1666933373.apk");
 		capabilities.setCapability("pCloudy_DurationInMinutes", 10);
 		capabilities.setCapability("pCloudy_DeviceManafacturer", deviceName);
@@ -56,7 +59,7 @@ public class Runner {
 		
 		//****  Capabilities for Progressive report  ****//
 		capabilities.setCapability("project", "Prtesting_webapp");
-		capabilities.setCapability("build", "Build_600");
+		capabilities.setCapability("build", "Build_701");
 		capabilities.setCapability("name",m.getName());
 		capabilities.setCapability("tag", "Android");
 		
@@ -66,6 +69,8 @@ public class Runner {
 		capabilities.setCapability("appPackage", "com.pcloudy.appiumdemo");
 		capabilities.setCapability("appActivity", "com.ba.mobile.LaunchActivity");
 		driver = new AndroidDriver(new URL("https://ind-west.pcloudy.com/progressive/wd/hub"), capabilities);
+//		driver = new AndroidDriver(new URL("https://lab.pcloudy.com/progressive/wd/hub"), capabilities);
+		
 		
 	}
 
@@ -112,7 +117,6 @@ public class Runner {
 		//Click on Accept button
         driver.findElement(By.xpath("//android.widget.Button[@resource-id='com.pcloudy.appiumdemo:id/accept']")).click(); 
         captureScreenShots();
-        System.out.println("Nilesh");
         
         //Click on Flight button
         driver.findElement(By.xpath("//android.widget.Button[@resource-id='com.pcloudy.appiumdemo:id/flightButton1']")).click();
