@@ -34,8 +34,6 @@ public class Runner {
 	String USERNAME = AppConfig.userName;
 	String APIKEY = AppConfig.password;
 	
-//	System.out.println("UserName from paramter - "+ USERNAME);
-//	System.out.println("API key from paramter - "+ APIKEY);
 	
 	@Parameters({"deviceName"})
 	@BeforeMethod
